@@ -1,4 +1,29 @@
 # README
+## P3:
+### Name of the team(s). At most two teams per project. One from each section, if applicable:
+Database Design 14 (Section 3) and Database Design 35 (Section 4)
+### Team members and the section they belong to. At most 4 team members per project:
+Rida Sharief (Section 3), Naqiya Motiwalla (Section 4), Hannah Marrow (Section 4)
+### Problem statement - describe the problem that your project is trying to solve
+Northeastern has no proper way of giving feedback on college textbooks. We wanted to create a system similar to TRACE but for books. 
+### Solution statement - describe the solution you implemented to solve the problem
+We designed a database that would take in student and course information, allowing students to review required reading material so that the university could implement changes based on the comments. Professors could see if they should continue with the same textbooks or find better options for students. 
+### User - describe the typical user(s) that would use your solution
+The student would use this database to review textbooks for the classes they are currently taking. 
+### Domain objects - describe at least two of the domain objects you implemented in your solution
+One of our domain objects is books, which can be reviewed by students, and contain the following fields:
+- Title
+- Publisher
+- Publish Date
+- Edition
+Our other domain object is reviews, which can be created by students about books, and contain the following fields:
+- Rating
+- Comment
+- Created
+- Updated
+- Reviewer (which is being mapped to the student’s table in a one to many relationship, meaning that one student can leave many reviews)
+- Book (which is being mapped to the books table in a one to many relationship, meaning that one books can receive many reviews)
+
 ## P1:
 ### Name of the project: 
 College Textbook Review Database
@@ -47,29 +72,4 @@ Every course is under a certain department. The course table has a department fi
 - Language 
 ### Description of the user interface requirements:
 The user interface will allow for creating, updating, deleting, and reading records from the students table, books table, and reviews table.
-
-## P3:
-### Name of the team(s). At most two teams per project. One from each section, if applicable:
-Database Design 14 (Section 3) and Database Design 35 (Section 4)
-### Team members and the section they belong to. At most 4 team members per project:
-Rida Sharief (Section 3), Naqiya Motiwalla (Section 4), Hannah Marrow (Section 4)
-### Problem statement - describe the problem that your project is trying to solve
-Northeastern has no proper way of giving feedback on college textbooks. We wanted to create a system similar to TRACE but for books. 
-### Solution statement - describe the solution you implemented to solve the problem
-We designed a database that would take in student and course information, allowing students to review required reading material so that the university could implement changes based on the comments. Professors could see if they should continue with the same textbooks or find better options for students. 
-### User - describe the typical user(s) that would use your solution
-The student would use this database to review textbooks for the classes they are currently taking. 
-### Domain objects - describe at least two of the domain objects you implemented in your solution
-One of our domain objects is books, which can be reviewed by students, and contain the following fields:
-- Title
-- Publisher
-- Publish Date
-- Edition
-Our other domain object is reviews, which can be created by students about books, and contain the following fields:
-- Rating
-- Comment
-- Created
-- Updated
-- Reviewer (which is being mapped to the student’s table in a one to many relationship, meaning that one student can leave many reviews)
-- Book (which is being mapped to the books table in a one to many relationship, meaning that one books can receive many reviews)
 
